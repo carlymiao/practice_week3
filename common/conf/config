@@ -1,0 +1,23 @@
+[LOG]
+#log_formatter=%%(asctime)s-%%(levelname)s-%%(filename)s-%%(name)s-日志信息:%%(message)s
+log_formatter=[%%(asctime)s]-[%%(levelname)s]-[%%(filename)s]-[%%(module)s]-[Line:%%(lineno)d]:%%(message)s
+log_setLevel=DEBUG
+
+[RECHARGE]
+case_amount=0
+
+[Sheet1]
+case_amount=0
+
+[CASE]
+#case_amount={'recharge':0,'Sheet1':[1,3,10]}
+#case_amount={'recharge':0,'Sheet1':[1,3,10],'withdraw':0,'add_loan':0}
+case_amount={'recharge':0,'add_loan':0,'audit':0}
+#case_amount={'audit':0}
+[DB]
+db_config = {'host': '47.107.168.87',
+             'user': 'python',
+             'password': 'python666',
+             'port': 3306,
+             'database':'future'
+             }
