@@ -4,8 +4,8 @@ from test_cases import all_testcase_new
 import HTMLTestRunnerNew
 import unittest
 import sys
-sys.path.append('./')
-print(sys.path)
+# sys.path.append('./')
+# print(sys.path)
 suit = unittest.TestSuite()  # 实例化测试套件
 loader = unittest.TestLoader()  # 参数化loader
 report_path = project_path.test_report_path
